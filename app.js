@@ -4,65 +4,67 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const cardArray = [
         {
-            name: 'cheeseburger',
-            img: './images/cheeseburger.png'
-        },
-        {
             name: 'fries',
-            img: './images/fries.png'
-        },
-        {
-            name: 'hotdog',
-            img: './images/hotdog.png'
+            img: 'images/fries.png'
         },
         {
             name: 'cheeseburger',
-            img: './images/cheeseburger.png'
+            img: 'images/cheeseburger.png'
         },
         {
             name: 'ice-cream',
-            img: './images/ice-cream.png'
+            img: 'images/ice-cream.png'
         },
         {
-            name: 'fries',
-            img: './images/fries.png'
+            name: 'pizza',
+            img: 'images/pizza.png'
+        },
+        {
+            name: 'milkshake',
+            img: 'images/milkshake.png'
         },
         {
             name: 'hotdog',
-            img: './images/hotdog.png'
+            img: 'images/hotdog.png'
         },
         {
-            name: 'milkshake',
-            img: './images/milkshake.png'
+            name: 'fries',
+            img: 'images/fries.png'
+        },
+        {
+            name: 'cheeseburger',
+            img: 'images/cheeseburger.png'
         },
         {
             name: 'ice-cream',
-            img: './images/ice-cream.png'
+            img: 'images/ice-cream.png'
         },
         {
             name: 'pizza',
-            img: './images/pizza.png'
+            img: 'images/pizza.png'
         },
         {
             name: 'milkshake',
-            img: './images/milkshake.png'
+            img: 'images/milkshake.png'
         },
         {
-            name: 'pizza',
-            img: './images/pizza.png'
+            name: 'hotdog',
+            img: 'images/hotdog.png'
         }
-    ];
+    ]
 
     const grid = document.querySelector('.grid');
 
     // game board
-    createBoard = () => {
+     function createBoard(){
         for (let i = o; i < cardArray.length; i++){
             let card = document.createElement('img');
-            card.setAttribute('src', './images/blank.png');
+            card.setAttribute('src', 'images/blank.png');
             card.setAttribute('data-1', i);
             //card.addEventListener('click', flipcard);
             grid.appendChild(card);
         }
     }
+
+    createBoard();
 })
