@@ -53,6 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     ]
 
+    cardArray.sort(() => 0.5 - Math.random());
+
     const grid = document.querySelector('.grid');
     let cardsChosen = [];
     let cardsChosenId = [];
@@ -101,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cardsChosenId.push(cardId);
         this.setAttribute('src', cardArray[cardId].img);
         if(cardsChosen.length === 2){
-            setTimeout(checkForMatch, 5000);
+            setTimeout(checkForMatch, 500);
         }
     }
 
