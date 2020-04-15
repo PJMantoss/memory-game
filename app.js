@@ -58,8 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const grid = document.querySelector('.grid');
     let cardsChosen = [];
     let cardsChosenId = [];
-    let cardsWon = [];
-    let resultDisplay = document.querySelector('#result');
+    const cardsWon = [];
+    const resultDisplay = document.querySelector('#result');
 
     // game board
      const createBoard = () => {
