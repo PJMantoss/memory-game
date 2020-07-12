@@ -3,12 +3,23 @@
     padding: 0;
 }
 
+body {
+    box-sizing: border-box;
+    background: black;
+    scroll-behavior: smooth;
+}
+
 .page-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     margin-top: 40px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    float: left;
 }
 
 .grid {
